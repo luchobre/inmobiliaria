@@ -26,32 +26,38 @@
 				<span><img class="icon" src="./assets/mail.svg" alt="icon" /></span>
 				<p class="info">oceanstateflo@ymail.com</p>
 			</div>
-			<div class="container-nav">
+			<nav class="container-nav">
 				<div class="container-logo">
-					<a class="link-logo" href=""
+					<a class="link-logo" href="#"
 						><img class="logo" src="./assets/logo.webp" alt="logo" />Intrepid
 						Ocean Estate
 					</a>
 				</div>
 				<div class="container-links">
-					<a class="link" href="">About us</a>
-					<a class="link" href="">Appraisals</a>
-					<a class="link" href="">Properties</a>
-					<a class="link" href="">Contact</a>
+					<a class="link" href="#">About us</a>
+					<a class="link" href="#">Appraisals</a>
+					<a class="link" href="#">Properties</a>
+					<a class="link" href="#">Contact</a>
 				</div>
+			</nav>
+			<div class="container-nav-movil">
+				<button class="btn-burger" id="toggle-button">&#9776;</button>
+				<nav class="container-links-movil" id="menu">
+					<a class="link" href="#">About us</a>
+					<a class="link" href="#">Appraisals</a>
+					<a class="link" href="#">Properties</a>
+					<a class="link" href="#">Contact</a>
+				</nav>
 			</div>
 		</header>
 		<main>
 			<div>
 				<div class="container-home">
-					<h1 class="title-home">What are you looking for?</h1>
-					<img
-						class="background-home"
-						src="./assets/home.webp"
-						alt="background" />
-				</div>
-				<div class="container-form">
-					<form
+					<div class="title-container">
+						<h1 class="title-home">What are you looking for?</h1>
+					</div>
+					<div class="container-form">
+						<form
 						action="/"
 						method="post"
 						name="form-search"
@@ -153,10 +159,12 @@
 								Search
 							</button>
 						</div>
+					</div>
 					</form>
 				</div>
 			</div>
 		</main>
 		<footer></footer>
 	</body>
+	<script src="./navbar.js"></script>
 </html>
