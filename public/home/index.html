@@ -5,6 +5,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Real Estate</title>
 		<link rel="stylesheet" href="./style.css" />
+		<link rel="stylesheet" href="./about.css" />
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
@@ -18,7 +19,7 @@
 	</head>
 	<body>
 		<header>
-			<div class="container-banner">
+			<div id="home" class="container-banner">
 				<span><img class="icon" src="./assets/pin-alt.svg" alt="icon" /></span>
 				<p class="info">1959 NE 153 ST North Miami</p>
 				<span><img class="icon" src="./assets/phone.svg" alt="icon" /></span>
@@ -28,13 +29,13 @@
 			</div>
 			<nav class="container-nav">
 				<div class="container-logo">
-					<a class="link-logo" href="#"
+					<a class="link-logo" href="#home"
 						><img class="logo" src="./assets/logo.webp" alt="logo" />Intrepid
 						Ocean Estate
 					</a>
 				</div>
 				<div class="container-links">
-					<a class="link" href="#">About us</a>
+					<a class="link" href="#about">About us</a>
 					<a class="link" href="#">Appraisals</a>
 					<a class="link" href="#">Properties</a>
 					<a class="link" href="#">Contact</a>
@@ -43,7 +44,7 @@
 			<div class="container-nav-movil">
 				<button class="btn-burger" id="toggle-button">&#9776;</button>
 				<nav class="container-links-movil" id="menu">
-					<a class="link" href="#">About us</a>
+					<a class="link" href="#about">About us</a>
 					<a class="link" href="#">Appraisals</a>
 					<a class="link" href="#">Properties</a>
 					<a class="link" href="#">Contact</a>
@@ -58,113 +59,181 @@
 					</div>
 					<div class="container-form">
 						<form
-						action="/"
-						method="post"
-						name="form-search"
-						id="form-search"
-						class="form">
-						<div class="form-select">
-							<select class="select" name="operation" id="operation" required>
-								<option class="option-form" value="rent">Rent</option>
-								<option class="option-form" value="temporary">Temporary</option>
-								<option class="option-form" value="sale">Sale</option>
-							</select>
-							<select
-								class="select"
-								name="type-of-operation"
-								id="type-of-operation"
-								required>
-								<option class="option-form" value="property-types">
-									Property types
-								</option>
-								<option class="option-form" value="closed-neighborhood">
-									Closed Neighborhood
-								</option>
-								<option class="option-form" value="cabins">Cabins</option>
-								<option class="option-form" value="fields">Fields</option>
-								<option class="option-form" value="two-family-house">
-									Two Family House
-								</option>
-								<option class="option-form" value="houses">Houses</option>
-								<option class="option-form" value="chalets">Chalets</option>
-								<option class="option-form" value="departments">
-									Departments
-								</option>
-								<option class="option-form" value="house-type-apartments">
-									House Type Apartments
-								</option>
-								<option class="option-form" value="warehouses">
-									Warehouses
-								</option>
-								<option class="option-form" value="business-funds">
-									Business Funds
-								</option>
-								<option class="option-form" value="fractions">Fractions</option>
-								<option class="option-form" value="industrial-sheds">
-									Industrial Sheds
-								</option>
-								<option class="option-form" value="commercial-real-estate">
-									Commercial Real Estate
-								</option>
-								<option class="option-form" value="premises-with-housing">
-									Premises With Housing
-								</option>
-								<option class="option-form" value="local">Local</option>
-								<option class="option-form" value="land-for-investors">
-									Land For Investors
-								</option>
-								<option class="option-form" value="ph">PH</option>
-							</select>
-							<select class="select" name="location" id="location" required>
-								<option class="option-form" value="locations">Locations</option>
-								<option class="option-form" value="andover">Andover</option>
-								<option class="option-form" value="aventura">Aventura</option>
-								<option class="option-form" value="bal-harbour">
-									Bal Harbour
-								</option>
-								<option class="option-form" value="bay-harbor-islands">
-									Bay Harbor Islands
-								</option>
-								<option class="option-form" value="biscayne-park">
-									Biscayne Park
-								</option>
-								<option class="option-form" value="carol-city">
-									Carol City
-								</option>
-								<option class="option-form" value="coral-terrace">
-									Coral Terrace
-								</option>
-								<option class="option-form" value="country-walk">
-									Country Walk
-								</option>
-								<option class="option-form" value="doral">Doral</option>
-								<option class="option-form" value="east-perrine">
-									East Perrine
-								</option>
-								<option class="option-form" value="el-portal">El Portal</option>
-								<option class="option-form" value="fisher-island">
-									Fisher Island
-								</option>
-								<option class="option-form" value="florida-city">
-									Florida City
-								</option>
-								<option class="option-form" value="golden-beach">
-									Golden Beach
-								</option>
-								<option class="option-form" value="hialeah-gardens">
-									Hialeah Gardens
-								</option>
-							</select>
-							<button class="btn-form" type="submit" value="search">
-								Search
-							</button>
-						</div>
+							action="/"
+							method="post"
+							name="form-search"
+							id="form-search"
+							class="form">
+							<div class="form-select">
+								<select class="select" name="operation" id="operation" required>
+									<option class="option-form" value="rent">Rent</option>
+									<option class="option-form" value="temporary">
+										Temporary
+									</option>
+									<option class="option-form" value="sale">Sale</option>
+								</select>
+								<select
+									class="select"
+									name="type-of-operation"
+									id="type-of-operation"
+									required>
+									<option class="option-form" value="property-types">
+										Property types
+									</option>
+									<option class="option-form" value="closed-neighborhood">
+										Closed Neighborhood
+									</option>
+									<option class="option-form" value="cabins">Cabins</option>
+									<option class="option-form" value="fields">Fields</option>
+									<option class="option-form" value="two-family-house">
+										Two Family House
+									</option>
+									<option class="option-form" value="houses">Houses</option>
+									<option class="option-form" value="chalets">Chalets</option>
+									<option class="option-form" value="departments">
+										Departments
+									</option>
+									<option class="option-form" value="house-type-apartments">
+										House Type Apartments
+									</option>
+									<option class="option-form" value="warehouses">
+										Warehouses
+									</option>
+									<option class="option-form" value="business-funds">
+										Business Funds
+									</option>
+									<option class="option-form" value="fractions">
+										Fractions
+									</option>
+									<option class="option-form" value="industrial-sheds">
+										Industrial Sheds
+									</option>
+									<option class="option-form" value="commercial-real-estate">
+										Commercial Real Estate
+									</option>
+									<option class="option-form" value="premises-with-housing">
+										Premises With Housing
+									</option>
+									<option class="option-form" value="local">Local</option>
+									<option class="option-form" value="land-for-investors">
+										Land For Investors
+									</option>
+									<option class="option-form" value="ph">PH</option>
+								</select>
+								<select class="select" name="location" id="location" required>
+									<option class="option-form" value="locations">
+										Locations
+									</option>
+									<option class="option-form" value="andover">Andover</option>
+									<option class="option-form" value="aventura">Aventura</option>
+									<option class="option-form" value="bal-harbour">
+										Bal Harbour
+									</option>
+									<option class="option-form" value="bay-harbor-islands">
+										Bay Harbor Islands
+									</option>
+									<option class="option-form" value="biscayne-park">
+										Biscayne Park
+									</option>
+									<option class="option-form" value="carol-city">
+										Carol City
+									</option>
+									<option class="option-form" value="coral-terrace">
+										Coral Terrace
+									</option>
+									<option class="option-form" value="country-walk">
+										Country Walk
+									</option>
+									<option class="option-form" value="doral">Doral</option>
+									<option class="option-form" value="east-perrine">
+										East Perrine
+									</option>
+									<option class="option-form" value="el-portal">
+										El Portal
+									</option>
+									<option class="option-form" value="fisher-island">
+										Fisher Island
+									</option>
+									<option class="option-form" value="florida-city">
+										Florida City
+									</option>
+									<option class="option-form" value="golden-beach">
+										Golden Beach
+									</option>
+									<option class="option-form" value="hialeah-gardens">
+										Hialeah Gardens
+									</option>
+								</select>
+								<button class="btn-form" type="submit" value="search">
+									Search
+								</button>
+							</div>
+						</form>
 					</div>
-					</form>
 				</div>
 			</div>
+			<section id="about">
+				<div class="container">
+					<h2 class="about">About Us</h2>
+					<div class="info1">
+						<div class="container-logo2">
+							<img class="logo-pic" src="./assets/logo.webp" alt="logo" />
+							<h2 class="title">Intrepid Ocean Real State</h2>
+						</div>
+						<div class="container-text1">
+							<p class="text">
+								Extraordinary properties directed and supervised by registered
+								Public Brokers, specialized in the purchase and sale of premium
+								properties
+							</p>
+						</div>
+					</div>
+					<div class="container-img">
+						<img src="./assets/about 2.webp" alt="pic" />
+					</div>
+					<div class="feature-container">
+						<div class="feature-item">
+							<div class="feature-content">
+								<div class="feature-icon">
+									<img src="./assets/record.svg" alt="Feature Icon" />
+								</div>
+								<h2 class="feature-title">Reliable Contracts</h2>
+								<p class="feature-description">
+									Our real estate agency is committed to providing you with
+									secure and reliable contracts to ensure transparent and
+									hassle-free transactions.
+								</p>
+							</div>
+						</div>
+						<div class="feature-item">
+							<div class="feature-content">
+								<div class="feature-icon">
+									<img src="./assets/cooperate.svg" alt="Feature Icon" />
+								</div>
+								<h2 class="feature-title">Solid Relationships</h2>
+								<p class="feature-description">
+									We value strong relationships with our clients. We strive to
+									build long-lasting bonds based on trust and mutual respect.
+								</p>
+							</div>
+						</div>
+						<div class="feature-item">
+							<div class="feature-content">
+								<div class="feature-icon">
+									<img src="./assets/money.svg" alt="Feature Icon" />
+								</div>
+								<h2 class="feature-title">Profitable Opportunities</h2>
+								<p class="feature-description">
+									Our focus on the real estate market enables us to offer you
+									profitable opportunities to invest and maximize your earnings
+									in quality properties.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
 		</main>
-		<footer></footer>
 	</body>
 	<script src="./navbar.js"></script>
 </html>

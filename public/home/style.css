@@ -24,8 +24,8 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 0px;
-    gap: 25px;
+    padding: 10px;
+    gap: 20px;
     background-color: var(--color-5);
 }
 
@@ -61,7 +61,10 @@
     margin: auto;
     align-items: center;
     gap: 10px;
+    padding-left: 2rem;
+    padding-right: 2rem;
     background-color: var(--color-1);
+    overflow: hidden;
 }
 
 .container-logo {
@@ -98,7 +101,7 @@
     display: flex;
     align-items: center;
     text-align: center;
-    color: var(--color-4);
+    color: var(--color-2);
     text-shadow: 1px 6px 4px rgba(0, 0, 0, 0.3);
     flex: none;
     order: 1;
@@ -116,7 +119,7 @@
     padding: 25px;
     align-items: center;
     text-align: center;
-    color: var(--color-4);
+    color: var(--color-2);
     text-shadow: 1px 6px 4px rgba(0, 0, 0, 0.3);
     flex: none;
     order: 1;
@@ -127,7 +130,7 @@
 
 .btn-burger {
     backface-visibility: hidden;
-    background: var(--color-6);
+    background: var(--color-1);
     border: 0;
     border-radius: .375rem;
     box-sizing: border-box;
@@ -203,7 +206,7 @@
 }
 
 .container-links-movil {
-    background-color: var(--color-6);
+    background-color: var(--color-1);
     width: 100%;
     text-transform: uppercase;
 }
@@ -235,22 +238,23 @@
 /** HOME */
 
 .container-home {
-    height: 100vh;
+    min-height: 50vh;
     background-image: url("./assets/home.webp");
     background-size: cover;
     background-position: center;
+    padding-bottom: 1.5rem;
 }
 
 .title-container {
     display: flex;
     justify-content: center;
-    padding-top: 10%;
+    padding-top: 8%;
 }
 
 .title-home {
     font-family: 'Italiana', serif;
     font-style: normal;
-    font-weight: 600;
+    font-weight: 900;
     font-size: 50px;
     display: flex;
     justify-content: center;
@@ -361,7 +365,7 @@
     .container-banner {
         width: auto;
         flex-direction: column;
-        gap: 15px;
+        gap: 1rem;
     }
 
     /** NAVBAR */
@@ -423,7 +427,7 @@
     .container-banner {
         width: auto;
         flex-direction: column;
-        gap: 15px;
+        gap: 1rem;
     }
 
     /** NAVBAR */
@@ -482,7 +486,7 @@
     .container-banner {
         width: auto;
         flex-direction: column;
-        gap: 15px;
+        gap: 1rem;
     }
 
     /** NAVBAR */
@@ -534,7 +538,3 @@
         text-transform: uppercase;
     }
 }
-
-@media screen and (min-width: 992px) and (max-width: 1199px) {}
-
-@media screen and (min-width: 1200px) and (max-width: 1399px) {}
