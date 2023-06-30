@@ -48,3 +48,29 @@
   text-decoration: none;
   cursor: pointer;
 }
+
+/** RESPONSIVE */
+
+@media screen and (min-width: 992px) {
+  .locations-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 3rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .locations-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 3rem;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .locations-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 3rem;
+  }
+}
