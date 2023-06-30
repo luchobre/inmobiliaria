@@ -14,6 +14,7 @@
     --color-4: #bae8e8;
     --color-5: #2c698d;
     --color-6: #000000;
+    --color-7: #FF6150;
 }
 
 /** BANNER */
@@ -69,7 +70,7 @@
 
 .container-logo {
     display: flex;
-    flex-direction: row;
+    flex-direction: row-reverse;
     justify-content: start;
     align-items: center;
     gap: 10px;
@@ -127,6 +128,15 @@
 }
 
 /** NAVBAR MOVIL */
+
+.container-logo-movil {
+    display: flex;
+    flex-direction: row-reverse;
+
+    @media (min-width: 992px) {
+        display: none;
+    }
+}
 
 .btn-burger {
     backface-visibility: hidden;
