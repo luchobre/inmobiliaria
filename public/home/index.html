@@ -6,6 +6,7 @@
 		<title>Real Estate</title>
 		<link rel="stylesheet" href="./style.css" />
 		<link rel="stylesheet" href="./about.css" />
+		<link rel="stylesheet" href="./locations.css" />
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
@@ -19,7 +20,7 @@
 	</head>
 	<body>
 		<header>
-			<div id="home" class="container-banner">
+			<div class="container-banner">
 				<span><img class="icon" src="./assets/pin-alt.svg" alt="icon" /></span>
 				<p class="info">1959 NE 153 ST North Miami</p>
 				<span><img class="icon" src="./assets/phone.svg" alt="icon" /></span>
@@ -42,7 +43,13 @@
 				</div>
 			</nav>
 			<div class="container-nav-movil">
-				<button class="btn-burger" id="toggle-button">&#9776;</button>
+				<div class="container-logo-movil">
+					<button class="btn-burger" id="toggle-button">&#9776;</button>
+					<a class="link-logo" href="#home"
+						><img class="logo" src="./assets/logo.webp" alt="logo" />Intrepid
+						Ocean Estate
+					</a>
+				</div>
 				<nav class="container-links-movil" id="menu">
 					<a class="link" href="#about">About us</a>
 					<a class="link" href="#">Appraisals</a>
@@ -53,7 +60,7 @@
 		</header>
 		<main>
 			<div>
-				<div class="container-home">
+				<section id="home" class="container-home">
 					<div class="title-container">
 						<h1 class="title-home">What are you looking for?</h1>
 					</div>
@@ -170,7 +177,7 @@
 							</div>
 						</form>
 					</div>
-				</div>
+				</section>
 			</div>
 			<section id="about">
 				<div class="container">
@@ -229,6 +236,66 @@
 									in quality properties.
 								</p>
 							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="locations-section">
+				<h2 class="section-title">Locations</h2>
+				<div class="locations-grid">
+					<div class="grid-row">
+						<div class="link-container">
+							<a href="#" class="location-link">Andover</a>
+						</div>
+						<div class="link-container">
+							<a href="#" class="location-link">Aventura</a>
+						</div>
+						<div class="link-container">
+							<a href="#" class="location-link">Bal Harbour</a>
+						</div>
+					</div>
+					<div class="grid-row">
+						<div class="link-container">
+							<a href="#" class="location-link">Bay Harbor Islands</a>
+						</div>
+						<div class="link-container">
+							<a href="#" class="location-link">Biscayne Park</a>
+						</div>
+						<div class="link-container">
+							<a href="#" class="location-link">Carol City</a>
+						</div>
+					</div>
+					<div class="grid-row">
+						<div class="link-container">
+							<a href="#" class="location-link">Coral Terrace</a>
+						</div>
+						<div class="link-container">
+							<a href="#" class="location-link">Country Walk</a>
+						</div>
+						<div class="link-container">
+							<a href="#" class="location-link">Doral (Florida)</a>
+						</div>
+					</div>
+					<div class="grid-row">
+						<div class="link-container">
+							<a href="#" class="location-link">East Perrine</a>
+						</div>
+						<div class="link-container">
+							<a href="#" class="location-link">El Portal (Florida)</a>
+						</div>
+						<div class="link-container">
+							<a href="#" class="location-link">Fisher Island</a>
+						</div>
+					</div>
+					<div class="grid-row">
+						<div class="link-container">
+							<a href="#" class="location-link">Florida City</a>
+						</div>
+						<div class="link-container">
+							<a href="#" class="location-link">Golden Beach (Florida)</a>
+						</div>
+						<div class="link-container">
+							<a href="#" class="location-link">Hialeah Gardens</a>
 						</div>
 					</div>
 				</div>
