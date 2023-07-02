@@ -5,16 +5,18 @@
   width: 100%;
 }
 
+.cont-section-title {
+  background: var(--color-1);
+}
+
 .section-title {
-  color: var(--color-6);
+  color: var(--color-2);
   text-align: center;
-  text-shadow: 0px 5px 2px #333;
-  font-size: 32px;
+  font-size: 28px;
   font-family: 'IBM Plex Sans', sans-serif;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
-  padding: 1rem;
   text-transform: uppercase;
 }
 

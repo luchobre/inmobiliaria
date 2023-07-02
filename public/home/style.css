@@ -17,6 +17,10 @@
     --color-7: #FF6150;
 }
 
+body {
+    background: var(--color-4);
+}
+
 /** BANNER */
 
 .container-banner {
@@ -217,7 +221,7 @@
 
 .container-links-movil {
     background-color: var(--color-1);
-    width: 100%;
+    width: auto;
     text-transform: uppercase;
 }
 
@@ -248,9 +252,10 @@
 /** HOME */
 
 .container-home {
-    min-height: 50vh;
+    min-height: 100vh;
     background-image: url("./assets/home.webp");
     background-size: cover;
+    background-attachment: fixed;
     background-position: center;
     padding-bottom: 1.5rem;
 }
@@ -385,6 +390,10 @@
         align-items: center;
     }
 
+    .container-home {
+        min-height: 50vh;
+    }
+
     /** FORM */
 
     .form-select {
@@ -445,6 +454,10 @@
         display: none;
     }
 
+    .container-home {
+        min-height: 50vh;
+    }
+
     /** FORM */
 
     .form-select {
@@ -502,6 +515,10 @@
     /** NAVBAR */
     .container-nav {
         display: none;
+    }
+
+    .container-home {
+        min-height: 50vh;
     }
 
     /** FORM */

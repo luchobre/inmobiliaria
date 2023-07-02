@@ -21,6 +21,10 @@
   padding: 1rem;
 }
 
+.cont-about-title {
+  background: var(--color-1);
+}
+
 .about {
   color: var(--color-2);
   font-size: 28px;
@@ -28,7 +32,6 @@
   font-family: 'IBM Plex Sans', sans-serif;
   text-align: center;
   text-transform: uppercase;
-  background-color: var(--color-1);
 }
 
 
