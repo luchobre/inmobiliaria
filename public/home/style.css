@@ -5,6 +5,7 @@
     box-sizing: border-box;
     z-index: 999;
     overflow-x: hidden;
+    /* border: 2px solid black; */
 }
 
 :root {
@@ -161,4 +162,62 @@
     right: 500px;
     left: 500px;
     top: 500px;
+}
+
+
+/** CARDS */
+.container-cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 60%;
+    width: 100%;
+    background-color: var(--color-5);
+}
+.card {
+    height: 450px;
+    width: 350px;
+    margin: .5%;
+    background-color: var(--color-3);
+    font-size: 22px;
+}
+.container-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 60%;
+}
+.card-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-between;
+    height: 40%;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 2;
+}
+
+/** FOOTER */
+
+.container-footer {
+    background-color: var(--color-1);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    line-height: 1.5;
+    color: #ffffff;
+}
+.footer-1col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.footer-img {
+    height: 300px;
 }
