@@ -5,6 +5,8 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Real Estate</title>
 		<link rel="stylesheet" href="./style.css" />
+		<link rel="stylesheet" href="./about.css" />
+		<link rel="stylesheet" href="./locations.css" />
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
@@ -15,40 +17,245 @@
 		<link
 			href="https://fonts.googleapis.com/css2?family=Italiana&display=swap"
 			rel="stylesheet" />
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/gsap.min.js"></script>
 	</head>
 	<body>
 		<header>
 			<div class="container-banner">
-				<span><img class="icon" src="./assets/pin-alt.svg" alt="icon" /></span>
-				<p class="info">1959 NE 153 ST North Miami</p>
-				<span><img class="icon" src="./assets/phone.svg" alt="icon" /></span>
-				<p class="info">305 627 3474</p>
-				<span><img class="icon" src="./assets/mail.svg" alt="icon" /></span>
-				<p class="info">oceanstateflo@ymail.com</p>
+				<span data-aos="fade-down"
+					><img class="icon" src="./assets/pin-alt.svg" alt="icon"
+				/></span>
+				<p data-aos="fade-down" class="info">1959 NE 153 ST North Miami</p>
+				<span data-aos="fade-down"
+					><img class="icon" src="./assets/phone.svg" alt="icon"
+				/></span>
+				<p data-aos="fade-down" class="info">305 627 3474</p>
+				<span data-aos="fade-down"
+					><img class="icon" src="./assets/mail.svg" alt="icon"
+				/></span>
+				<p data-aos="fade-down" class="info">oceanstateflo@ymail.com</p>
 			</div>
-			<div class="container-nav">
-				<div class="container-logo">
-					<a class="link-logo" href=""
+			<nav class="container-nav">
+				<div data-aos="fade-right" class="container-logo">
+					<a class="link-logo" href="#home"
 						><img class="logo" src="./assets/logo.webp" alt="logo" />Intrepid
 						Ocean Estate
 					</a>
 				</div>
-				<div class="container-links">
-					<a class="link" href="">About us</a>
-					<a class="link" href="">Appraisals</a>
-					<a class="link" href="">Properties</a>
-					<a class="link" href="">Contact</a>
+				<div data-aos="fade-left" class="container-links">
+					<a class="link" href="#about">About us</a>
+					<a class="link" href="#">Appraisals</a>
+					<a class="link" href="#">Properties</a>
+					<a class="link" href="#">Contact</a>
 				</div>
+			</nav>
+			<div class="container-nav-movil">
+				<div class="container-logo-movil">
+					<button class="btn-burger" id="toggle-button">&#9776;</button>
+					<a data-aos="fade-right" class="link-logo" href="#home"
+						><img class="logo" src="./assets/logo.webp" alt="logo" />
+					</a>
+				</div>
+				<nav class="container-links-movil" id="menu">
+					<a class="link" href="#about">About us</a>
+					<a class="link" href="#">Appraisals</a>
+					<a class="link" href="#">Properties</a>
+					<a class="link" href="#">Contact</a>
+				</nav>
 			</div>
 		</header>
 		<main>
 			<div>
-				<div class="container-home">
-					<h1 class="title-home">What are you looking for?</h1>
-					<img
-						class="background-home"
-						src="./assets/home.webp"
-						alt="background" />
+				<section id="home" class="container-home">
+					<div class="title-container">
+						<h1 data-aos="fade-down" class="title-home">
+							What are you looking for?
+						</h1>
+					</div>
+					<div data-aos="fade-up" class="container-form">
+						<form
+							action="/"
+							method="post"
+							name="form-search"
+							id="form-search"
+							class="form">
+							<div class="form-select">
+								<select class="select" name="operation" id="operation" required>
+									<option class="option-form" value="rent">Rent</option>
+									<option class="option-form" value="temporary">
+										Temporary
+									</option>
+									<option class="option-form" value="sale">Sale</option>
+								</select>
+								<select
+									class="select"
+									name="type-of-operation"
+									id="type-of-operation"
+									required>
+									<option class="option-form" value="property-types">
+										Property types
+									</option>
+									<option class="option-form" value="closed-neighborhood">
+										Closed Neighborhood
+									</option>
+									<option class="option-form" value="cabins">Cabins</option>
+									<option class="option-form" value="fields">Fields</option>
+									<option class="option-form" value="two-family-house">
+										Two Family House
+									</option>
+									<option class="option-form" value="houses">Houses</option>
+									<option class="option-form" value="chalets">Chalets</option>
+									<option class="option-form" value="departments">
+										Departments
+									</option>
+									<option class="option-form" value="house-type-apartments">
+										House Type Apartments
+									</option>
+									<option class="option-form" value="warehouses">
+										Warehouses
+									</option>
+									<option class="option-form" value="business-funds">
+										Business Funds
+									</option>
+									<option class="option-form" value="fractions">
+										Fractions
+									</option>
+									<option class="option-form" value="industrial-sheds">
+										Industrial Sheds
+									</option>
+									<option class="option-form" value="commercial-real-estate">
+										Commercial Real Estate
+									</option>
+									<option class="option-form" value="premises-with-housing">
+										Premises With Housing
+									</option>
+									<option class="option-form" value="local">Local</option>
+									<option class="option-form" value="land-for-investors">
+										Land For Investors
+									</option>
+									<option class="option-form" value="ph">PH</option>
+								</select>
+								<select class="select" name="location" id="location" required>
+									<option class="option-form" value="locations">
+										Locations
+									</option>
+									<option class="option-form" value="andover">Andover</option>
+									<option class="option-form" value="aventura">Aventura</option>
+									<option class="option-form" value="bal-harbour">
+										Bal Harbour
+									</option>
+									<option class="option-form" value="bay-harbor-islands">
+										Bay Harbor Islands
+									</option>
+									<option class="option-form" value="biscayne-park">
+										Biscayne Park
+									</option>
+									<option class="option-form" value="carol-city">
+										Carol City
+									</option>
+									<option class="option-form" value="coral-terrace">
+										Coral Terrace
+									</option>
+									<option class="option-form" value="country-walk">
+										Country Walk
+									</option>
+									<option class="option-form" value="doral">Doral</option>
+									<option class="option-form" value="east-perrine">
+										East Perrine
+									</option>
+									<option class="option-form" value="el-portal">
+										El Portal
+									</option>
+									<option class="option-form" value="fisher-island">
+										Fisher Island
+									</option>
+									<option class="option-form" value="florida-city">
+										Florida City
+									</option>
+									<option class="option-form" value="golden-beach">
+										Golden Beach
+									</option>
+									<option class="option-form" value="hialeah-gardens">
+										Hialeah Gardens
+									</option>
+								</select>
+								<button class="btn-form" type="submit" value="search">
+									Search
+								</button>
+							</div>
+						</form>
+					</div>
+				</section>
+			</div>
+			<section id="about">
+				<div class="container">
+					<div class="cont-about-title">
+						<h2 data-aos="fade-down" class="about">About Us</h2>
+					</div>
+					<div class="info1">
+						<div data-aos="zoom-in" class="container-logo2">
+							<img class="logo-pic" src="./assets/logo.webp" alt="logo" />
+							<h2 class="title">Intrepid Ocean Real State</h2>
+						</div>
+						<div data-aos="zoom-in" class="container-text1">
+							<p class="text">
+								Extraordinary properties directed and supervised by registered
+								Public Brokers, specialized in the purchase and sale of premium
+								properties
+							</p>
+						</div>
+					</div>
+					<div class="container-img">
+						<img src="./assets/about 2.webp" alt="pic" />
+					</div>
+					<div class="feature-container">
+						<div class="feature-item">
+							<div class="feature-content">
+								<div data-aos="fade-up" class="feature-icon">
+									<img src="./assets/salesman.svg" alt="Feature Icon" />
+								</div>
+								<h2 data-aos="fade-up" class="feature-title">
+									Reliable Contracts
+								</h2>
+								<p data-aos="zoom-in" class="feature-description">
+									Our real estate agency is committed to providing you with
+									secure and reliable contracts to ensure transparent and
+									hassle-free transactions.
+								</p>
+							</div>
+						</div>
+						<div class="feature-item">
+							<div class="feature-content">
+								<div data-aos="fade-up" class="feature-icon">
+									<img src="./assets/cooperate.svg" alt="Feature Icon" />
+								</div>
+								<h2 data-aos="fade-up" class="feature-title">
+									Solid Relationships
+								</h2>
+								<p data-aos="zoom-in" class="feature-description">
+									We value strong relationships with our clients. We strive to
+									build long-lasting bonds based on trust and mutual respect.
+								</p>
+							</div>
+						</div>
+						<div class="feature-item">
+							<div class="feature-content">
+								<div data-aos="fade-up" class="feature-icon">
+									<img src="./assets/money.svg" alt="Feature Icon" />
+								</div>
+								<h2 data-aos="fade-up" class="feature-title">
+									Profitable Opportunities
+								</h2>
+								<p data-aos="zoom-in" class="feature-description">
+									Our focus on the real estate market enables us to offer you
+									profitable opportunities to invest and maximize your earnings
+									in quality properties.
+								</p>
+							</div>
+						</div>
+					</div>
 				</div>
 				<div class="container-form">
 					<form action="">
@@ -62,80 +269,15 @@
 					</form>
 				</div>
 			</div>
-			<div class="container-cards">
-				<div class="card">
-					<div class="container-image">
-				  		<img class="card-image" src="./assets/card 2.webp"></img>
-					</div>
-				  <div class="card-text">
-					<h4 class="text-title">Large exposed brick house</h4>
-					<div class="text-ubication">college park</div>
-					<div class="text-description">dsdsds</div>
-					<div class="text-price">232323</div>
-				  </div>
-				</div>
-				<div class="card">
-					<div class="container-image">
-				  		<img class="card-image" src="./assets/card 2.webp"></img>
-					</div>
-				  <div class="card-text">
-					<h4 class="text-title">Large exposed brick house</h4>
-					<div class="text-ubication">college park</div>
-					<div class="text-description">dsdsds</div>
-					<div class="text-price">232323</div>
-				  </div>
-				</div>
-				<div class="card">
-					<div class="container-image">
-				  		<img class="card-image" src="./assets/card 2.webp"></img>
-					</div>
-				  <div class="card-text">
-					<h4 class="text-title">Large exposed brick house</h4>
-					<div class="text-ubication">college park</div>
-					<div class="text-description">dsdsds</div>
-					<div class="text-price">232323</div>
-				  </div>
-				</div>
-				<div class="card">
-					<div class="container-image">
-				  		<img class="card-image" src="./assets/card 2.webp"></img>
-					</div>
-				  <div class="card-text">
-					<h4 class="text-title">Large exposed brick house</h4>
-					<div class="text-ubication">college park</div>
-					<div class="text-description">dsdsds</div>
-					<div class="text-price">232323</div>
-				  </div>
-				</div>
-			</div>
 		</main>
-		<footer>
-			<div class="container-footer">
-				<div class="footer-1col">
-					<img src="./assets/logo.webp" alt="" class="footer-img">
-					<div class="footer-img-text">Footer 8899</div>
-				</div>
-				<div class="footer-2col">
-					<p>Miami Florida</p>
-					<p>1959 NE sdfsd</p>
-					<p>232232323</p>
-					<p>2323232</p>
-					<p>23232323</p>
-					<p>ejemplo@hotmail.com</p>
-					<p>Office Hours:</p>
-					<p>Monday to Friday from 9 a.m. to 12:30 p.m. and 3:30 p.m. to 7 p.m.</p>
-					<p>Saturdays from 9 am to 12:30 pm</p>
-				</div>
-				<div class="footer-3col">
-					<div class="footer-sections">
-						<h4>SECTIONS</h4>
-						<p>About us</p>
-						<p>Appraisals </p>
-						<p>Properties</p>
-						<p>Contact</p>
-					</div>
-				</div>
-			</div>
-		</footer>
+		<footer></footer>
 	</body>
+	<script>
+		AOS.init({
+			duration: 3000,
+			easing: "ease-in-out",
+			once: true,
+		});
+	</script>
+	<script src="./navbar.js"></script>
 </html>

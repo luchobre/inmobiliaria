@@ -1,0 +1,78 @@
+/** LOCATIONS */
+
+.locations-section {
+  background-color: var(--color-4);
+  width: 100%;
+}
+
+.cont-section-title {
+  background: var(--color-1);
+}
+
+.section-title {
+  color: var(--color-2);
+  text-align: center;
+  font-size: 28px;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.locations-grid {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.grid-row {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.link-container {
+  background: var(--color-2);
+  width: auto;
+  padding: 1rem;
+  margin: 1rem;
+}
+
+.location-link {
+  color: var(--color-7);
+  text-align: center;
+  font-size: 18px;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/** RESPONSIVE */
+
+@media screen and (min-width: 992px) {
+  .locations-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 3rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .locations-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 3rem;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .locations-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 3rem;
+  }
+}
