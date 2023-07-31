@@ -7,6 +7,8 @@
 		<link rel="stylesheet" href="./style.css" />
 		<link rel="stylesheet" href="./about.css" />
 		<link rel="stylesheet" href="./locations.css" />
+		<link rel="stylesheet" href="./about.css" />
+		<link rel="stylesheet" href="./locations.css" />
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
@@ -17,6 +19,9 @@
 		<link
 			href="https://fonts.googleapis.com/css2?family=Italiana&display=swap"
 			rel="stylesheet" />
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/gsap.min.js"></script>
 		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 		<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/gsap.min.js"></script>
@@ -36,7 +41,22 @@
 					><img class="icon" src="./assets/mail.svg" alt="icon"
 				/></span>
 				<p data-aos="fade-down" class="info">oceanstateflo@ymail.com</p>
+				<span data-aos="fade-down"
+					><img class="icon" src="./assets/pin-alt.svg" alt="icon"
+				/></span>
+				<p data-aos="fade-down" class="info">1959 NE 153 ST North Miami</p>
+				<span data-aos="fade-down"
+					><img class="icon" src="./assets/phone.svg" alt="icon"
+				/></span>
+				<p data-aos="fade-down" class="info">305 627 3474</p>
+				<span data-aos="fade-down"
+					><img class="icon" src="./assets/mail.svg" alt="icon"
+				/></span>
+				<p data-aos="fade-down" class="info">oceanstateflo@ymail.com</p>
 			</div>
+			<nav class="container-nav">
+				<div data-aos="fade-right" class="container-logo">
+					<a class="link-logo" href="#home"
 			<nav class="container-nav">
 				<div data-aos="fade-right" class="container-logo">
 					<a class="link-logo" href="#home"
@@ -57,7 +77,26 @@
 					<a data-aos="fade-right" class="link-logo" href="#home"
 						><img class="logo" src="./assets/logo.webp" alt="logo" />
 					</a>
+				<div data-aos="fade-left" class="container-links">
+					<a class="link" href="#about">About us</a>
+					<a class="link" href="#">Appraisals</a>
+					<a class="link" href="#">Properties</a>
+					<a class="link" href="#">Contact</a>
 				</div>
+			</nav>
+			<div class="container-nav-movil">
+				<div class="container-logo-movil">
+					<button class="btn-burger" id="toggle-button">&#9776;</button>
+					<a data-aos="fade-right" class="link-logo" href="#home"
+						><img class="logo" src="./assets/logo.webp" alt="logo" />
+					</a>
+				</div>
+				<nav class="container-links-movil" id="menu">
+					<a class="link" href="#about">About us</a>
+					<a class="link" href="#">Appraisals</a>
+					<a class="link" href="#">Properties</a>
+					<a class="link" href="#">Contact</a>
+				</nav>
 				<nav class="container-links-movil" id="menu">
 					<a class="link" href="#about">About us</a>
 					<a class="link" href="#">Appraisals</a>
@@ -395,18 +434,29 @@
 					<p>Monday to Friday from 9 a.m. to 12:30 p.m. and 3:30 p.m. to 7 p.m.</p>
 					<p>Saturdays from 9 am to 12:30 pm</p>
 				</div>
-				<div class="footer-3col">
-					<div class="footer-sections">
-						<h4>SECTIONS</h4>
-						<p>About us</p>
-						<p>Appraisals </p>
-						<p>Properties</p>
-						<p>Contact</p>
-					</div>
+				<div class="container-form">
+					<form action="">
+						<label for="">Rent</label>
+						<input type="text" />
+						<label for="">Property types</label>
+						<input type="text" />
+						<label for="">Locations</label>
+						<input type="text" />
+						<button type="button">Search</button>
+					</form>
 				</div>
 			</div>
-		</footer>
+		</main>
+		<footer></footer>
 	</body>
+	<script>
+		AOS.init({
+			duration: 3000,
+			easing: "ease-in-out",
+			once: true,
+		});
+	</script>
+	<script src="./navbar.js"></script>
 	<script>
 		AOS.init({
 			duration: 3000,
